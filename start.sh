@@ -8,4 +8,5 @@ while true; do
 
   echo "Restarting server in 5 seconds. CTRL-C to cancel."
   sleep 5
+  clear
 done
