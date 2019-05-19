@@ -12,16 +12,16 @@ useArraysForBlockStates: true
 world-settings:
   default:
     verbose: true
-    armor-stand:
-      optimize-movement: true
-    grass-ignores-light: true
-    tnt:
-      optimize-liquid-explosions: true
-      optimize-movement: true
-    disable-falling-block-stacking-at-256: true
     hopper:
       fire-InventoryMoveItemEvent: true
       push-based: true
+    tnt:
+      optimize-movement: true
+      optimize-liquid-explosions: true
+    armor-stand:
+      optimize-movement: true
+    grass-ignores-light: true
+    disable-falling-block-stacking-at-256: true
     fix-east-west-cannoning: false
     allow-non-player-entities-on-scoreboards: false
     redstone-fire-BlockPhysicsEvent: false

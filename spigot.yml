@@ -14,6 +14,9 @@ config-version: 8
 settings:
   debug: false
   save-user-cache-on-stop-only: true
+  timeout-time: 60
+  restart-on-crash: true
+  restart-script: ./start.sh
   bungeecord: false
   late-bind: false
   sample-count: 12
@@ -23,9 +26,6 @@ settings:
   int-cache-limit: 1024
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-threshold: 100.0
-  timeout-time: 60
-  restart-on-crash: true
-  restart-script: ./start.sh
   netty-threads: 4
   attribute:
     maxHealth:
@@ -68,6 +68,26 @@ world-settings:
   default:
     verbose: true
     mob-spawn-range: 3
+    anti-xray:
+      enabled: false
+      engine-mode: 1
+      hide-blocks:
+      - 14
+      - 15
+      - 16
+      - 21
+      - 48
+      - 49
+      - 54
+      - 56
+      - 73
+      - 74
+      - 82
+      - 129
+      - 130
+      replace-blocks:
+      - 1
+      - 5
     nerf-spawner-mobs: false
     growth:
       cactus-modifier: 100
@@ -105,26 +125,6 @@ world-settings:
       combat-exhaustion: 0.3
       regen-exhaustion: 3.0
     max-tnt-per-tick: 100
-    anti-xray:
-      enabled: false
-      engine-mode: 1
-      hide-blocks:
-      - 14
-      - 15
-      - 16
-      - 21
-      - 48
-      - 49
-      - 54
-      - 56
-      - 73
-      - 74
-      - 82
-      - 129
-      - 130
-      replace-blocks:
-      - 1
-      - 5
     max-tick-time:
       tile: 1000
       entity: 1000
