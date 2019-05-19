@@ -87,7 +87,7 @@ world-settings:
     container-update-tick-rate: 2
     keep-spawn-loaded: true
     falling-blocks-collide-with-signs: false
-    disable-mood-sounds: false
+    disable-mood-sounds: true
     use-async-lighting: true
     portal-search-radius: 128
     disable-thunder: true
